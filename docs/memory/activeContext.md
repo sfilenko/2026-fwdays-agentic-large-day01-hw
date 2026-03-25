@@ -1,21 +1,15 @@
-> Last updated: 2026-03-25 (session 4)
+> Last updated: 2026-03-25 (session 5)
 > Related: [progress.md](progress.md) | [decisionLog.md](decisionLog.md) | [PRD](../product/PRD.md) | [architecture](../technical/architecture.md) | [undocumented-behavior](../technical/undocumented-behavior.md)
 
 ## Current focus
 
-Workshop PR deliverables: only `.cursorignore` remains. All docs complete and linked.
+All Workshop PR deliverables complete. Ready to open PR.
 
 ## What was just done
 
-- Added 6 undocumented-behavior entries to `decisionLog.md` (verified against source):
-  1. ShapeCache WeakMap keying — only geometry busts cache; style changes safe only via action system's `newElementWith()` (`mutateElement.ts:130–137`, `shape.ts:83`)
-  2. EVENTUALLY stale snapshot — deliberately holds `this.snapshot` stale to merge all EVENTUALLY changes into next IMMEDIATELY undo entry (`store.ts:376–385`)
-  3. Undo version exclusion — `version`/`versionNonce` excluded from delta application so each undo appears as a new user action to collaborators (`history.ts:33`)
-  4. Uninitialized image delta skip — pending image elements silently excluded from Store delta detection (`store.ts:937–943`)
-  5. triggerUpdate unconditional nonce — every call regenerates `sceneNonce`, busting renderer memo even without element changes (`Scene.ts:303–309`)
-  6. Object.assign binding bypass — `fixBindingsAfterDuplication()` bypasses `mutateElement()`; no version bump on binding ref updates (`binding.ts:1992–2047`)
-- Added markdown links to all reference and product docs in every pre-loaded Memory Bank file.
-- Updated `progress.md` (17 decisionLog entries, session 4 timestamp).
+- Created `.cursorignore` (copy of `.claudeignore`) — last required PR checklist item.
+- Committed `.claudeignore` to git.
+- All required deliverables for the Workshop PR are now done: Memory Bank, PRD, `.cursorignore`, `.claudeignore`.
 
 ## Active decisions
 
@@ -27,7 +21,7 @@ Workshop PR deliverables: only `.cursorignore` remains. All docs complete and li
 
 ## In progress (not finished)
 
-- **`.cursorignore`** — not yet created; last remaining required PR checklist item.
+- **Workshop PR** — deliverables complete; PR not yet opened.
 - **Implementation work** — 0% — no feature tasks started; awaiting user direction.
 
 ## Known issues & open questions

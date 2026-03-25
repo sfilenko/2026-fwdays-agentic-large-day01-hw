@@ -1,9 +1,9 @@
-> Last updated: 2026-03-25 (session 4)
+> Last updated: 2026-03-25 (session 5)
 > Related: [activeContext.md](activeContext.md) | [decisionLog.md](decisionLog.md) | [PRD](../product/PRD.md) | [dev-setup](../technical/dev-setup.md)
 
 ## Completion snapshot
 
-Workshop PR deliverables: PRD done, `.cursorignore` remaining. Memory Bank fully audited (3 passes). Implementation work not yet started.
+All Workshop PR deliverables complete (Memory Bank, PRD, `.cursorignore`, `.claudeignore`). PR not yet opened. Implementation work not yet started.
 Status: On track
 
 ---
@@ -37,8 +37,9 @@ Status: On track
 
 ## Not started
 
-- [ ] `.cursorignore` — create in repo root (required main checklist item in `.github/PULL_REQUEST_TEMPLATE.md`)
-- [ ] Workshop PR — open PR with template filled; gate: `.cursorignore` done
+- [x] `.cursorignore` — created in repo root (copy of `.claudeignore`); committed `ad88a75`
+- [x] `.claudeignore` — committed `b842994`
+- [ ] Workshop PR — open PR with template filled
 - [ ] First implementation task — TBD; needs user direction
 - [ ] `docs/memory/progress.md` updates as implementation milestones are hit
 - [ ] `docs/memory/activeContext.md` rewrite at end of each session
@@ -67,7 +68,7 @@ Status: On track
 
 - `Memory Bank setup` — **Done** — All orientation docs created, audited (3 passes), and cross-referenced; AI can onboard to this repo without verbal re-orientation.
 - `PRD v0.1` — **Done** — Reverse-engineered PRD of Excalidraw created; In Review status; scope clarification (Q-4) still needed.
-- `Workshop PR complete` — **Not started** — Remaining gate: `.cursorignore` created, PR opened with template filled.
+- `Workshop PR complete` — **In progress** — All deliverables done; PR not yet opened.
 - `First implementation task` — **Not started** — Scope TBD; no code changed yet.
 - `Test coverage baseline` — **Not started** — Run `yarn test:all` to confirm current pass/fail state before any changes.
 - `Feature implementation` — **Not started** — Depends on: first task defined, test baseline confirmed.

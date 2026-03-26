@@ -1,6 +1,6 @@
 # Active Context
 
-> Last updated: 2026-03-26 (session 7)
+> Last updated: 2026-03-26 (session 8)
 > Related: [progress.md](progress.md) | [decisionLog.md](decisionLog.md) | [PRD](../product/PRD.md) | [architecture](../technical/architecture.md) | [undocumented-behavior](../technical/undocumented-behavior.md)
 
 ## Current focus
@@ -9,19 +9,12 @@ Workshop PR open; review follow-up fixes applied. Awaiting further review or imp
 
 ## What was just done
 
-Full audit and correction of all docs/memory/ and reference docs. Every finding was verified against source before fixing. Changes made:
+Session 8 — doc lint fixes (MD041, ephemeral fact cleanup). All findings verified against source before fixing.
 
-- `docs/memory/activeContext.md` — marked `.cursorignore` step as done (commit `ad88a75`)
-- `docs/memory/decisionLog.md` — added missing H1; split into active (158 lines, 6 undocumented-behavior entries) + archive
-- `docs/technical/decisionLog-archive.md` — created; holds 11 pre-2026 architectural + policy decisions (259 lines)
-- `CLAUDE.md` — updated two `decisionLog` references to point to archive for pre-2026 entries
-- `docs/product/domain-glossary.md` — ExcalidrawElement entry: added note on 6 missing fields (`seed`, `strokeWidth`, `strokeStyle`, `roundness`, `link`, `customData`) with reference to `_ExcalidrawElementBase` at `packages/element/src/types.ts:40`
-- `docs/product/PRD.md` — trimmed 324→233 lines: extracted Technical considerations to `prd-technical-notes.md`, Launch plan to `launch-plan.md`; added 4 mandated sections (Product Purpose, Target Audience, Key Features, Technical constraints / Non-goals)
-- `docs/technical/prd-technical-notes.md` — created; known constraints, Q-1–Q-3, dependency table
-- `docs/product/launch-plan.md` — created; full phase gates, launch checklist, comm plan
-- `docs/technical/architecture.md` — "Four layers" → "Five layers" (line 204); ShapeCache description corrected: keyed by element object reference not id, value type is `{ shape: ElementShape; theme: AppState["theme"] }` not `{ shape: Drawable, version: number }`
-- `docs/technical/dev-setup.md` — H1 moved to line 1 (MD041); 3 bare fences tagged `text` (MD040); hardcoded upstream GitHub URL replaced with `<your-username>/<your-fork-repo>` placeholder
-- `docs/technical/undocumented-behavior.md` — flushSync count corrected: 14 in App.tsx (not 15), 2 in ConfirmDialog.tsx, 1 in UnlockPopup.tsx; mutateElement ShapeCache.delete trigger fields corrected: only `height`, `width`, `fileId`, `points` (not `x`, `y`, `angle`, `scale`)
+- `docs/memory/activeContext.md` — added `# Active Context` H1 (MD041); anchored yarn.lock observation with date (commit `00b7b92`, `f48f911`)
+- `docs/memory/progress.md` — added `# Progress` H1 (MD041); anchored yarn.lock observation with date; fixed invalid `- [-]` marker; moved completed items to Done section
+- Verified `docs/technical/architecture.md` ShapeCache description — already correct from session 6, no change
+- Verified `docs/memory/progress.md` checklist markers — already correct from earlier fix, no change
 
 ## Active decisions
 
@@ -60,5 +53,5 @@ Full audit and correction of all docs/memory/ and reference docs. Every finding 
 
 ## Context that expires
 
-- `yarn.lock` has an unstaged modification (last observed: 2026-03-26, across multiple sessions) — check before running `yarn install` or adding dependencies; root cause not yet investigated.
+- `yarn.lock` has an unstaged modification (last observed: 2026-03-26) — check before running `yarn install` or adding dependencies; root cause not yet investigated.
 - No feature flags or temporary workarounds are currently active in the codebase (from this session's perspective).

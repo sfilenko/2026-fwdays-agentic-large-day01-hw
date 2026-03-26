@@ -1,6 +1,6 @@
 # Progress
 
-> Last updated: 2026-03-26 (session 7)
+> Last updated: 2026-03-26 (session 8)
 > Related: [activeContext.md](activeContext.md) | [decisionLog.md](decisionLog.md) | [PRD](../product/PRD.md) | [dev-setup](../technical/dev-setup.md)
 
 ## Completion snapshot
@@ -18,8 +18,8 @@ Status: On track
 - [x] `docs/memory/techContext.md` — versions, dev commands, build system, ESLint rules, test infra
 - [x] `docs/memory/systemPatterns.md` — state management layers, mutation pattern, action system, rendering pipeline (5 layers)
 - [x] `docs/memory/productContext.md` — WHY/WHO/WHAT, UX intent, success signals, anti-goals, constraints
-- [x] `docs/memory/activeContext.md` — session state, open questions, next steps
-- [x] `docs/memory/progress.md` — this file
+- [x] `docs/memory/activeContext.md` — session state, open questions, next steps; H1 added (MD041)
+- [x] `docs/memory/progress.md` — this file; H1 added (MD041), checklist markers fixed
 
 **Reference docs**
 - [x] `docs/memory/decisionLog.md` — 6 undocumented-behavior entries (158 lines); pre-2026 entries archived
@@ -73,7 +73,7 @@ Status: On track
 
 - `Memory Bank setup` — **Done** — All orientation docs created, audited (3 passes), and cross-referenced; AI can onboard to this repo without verbal re-orientation.
 - `PRD v0.1` — **Done** — Reverse-engineered PRD of Excalidraw created; In Review status; scope clarification (Q-4) still needed.
-- `Doc audit pass` — **Done** (session 6) — All reference docs verified against source; 12 files corrected.
+- `Doc audit pass` — **Done** (sessions 6–8) — All reference docs verified against source; MD041/MD040 lint fixes applied to memory files.
 - `Workshop PR complete` — **Done** — PR opened (2026-03-26); review follow-up fixes applied (commit `90d52b7`).
 - `First implementation task` — **Not started** — Scope TBD; no code changed yet.
 - `Test coverage baseline` — **Not started** — Run `yarn test:all` to confirm current pass/fail state before any changes.

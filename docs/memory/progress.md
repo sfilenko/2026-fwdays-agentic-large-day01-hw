@@ -1,9 +1,9 @@
-> Last updated: 2026-03-26 (session 6)
+> Last updated: 2026-03-26 (session 7)
 > Related: [activeContext.md](activeContext.md) | [decisionLog.md](decisionLog.md) | [PRD](../product/PRD.md) | [dev-setup](../technical/dev-setup.md)
 
 ## Completion snapshot
 
-All Workshop PR deliverables complete (Memory Bank, PRD, `.cursorignore`, `.claudeignore`). Doc audit pass complete (session 6). PR not yet opened. Implementation work not yet started.
+All Workshop PR deliverables complete (Memory Bank, PRD, `.cursorignore`, `.claudeignore`). Doc audit pass complete (session 6). PR opened (2026-03-26); review follow-up fixes applied (commit `90d52b7`). Implementation work not yet started.
 Status: On track
 
 ---
@@ -29,20 +29,20 @@ Status: On track
 - [x] `docs/product/PRD.md` — 233 lines; 4 mandated sections added (Product Purpose, Target Audience, Key Features, Technical constraints / Non-goals)
 - [x] `docs/product/domain-glossary.md` — ExcalidrawElement entry: 6 missing base fields documented with `_ExcalidrawElementBase` reference
 - [x] `docs/product/launch-plan.md` — extracted from PRD; full phase gates, launch checklist, comm plan
+- [x] `.cursorignore` — created in repo root (copy of `.claudeignore`); committed `ad88a75`
+- [x] `.claudeignore` — committed `b842994`
+- [x] Workshop PR — opened (2026-03-26); review follow-up fixes applied (commit `90d52b7`)
 
 ---
 
 ## In progress
 
-- [-] Implementation work — 0% — no feature tasks started; awaiting user direction on first task.
+*(nothing actively in progress)*
 
 ---
 
 ## Not started
 
-- [x] `.cursorignore` — created in repo root (copy of `.claudeignore`); committed `ad88a75`
-- [x] `.claudeignore` — committed `b842994`
-- [ ] Workshop PR — open PR with template filled
 - [ ] First implementation task — TBD; needs user direction
 - [ ] `docs/memory/progress.md` updates as implementation milestones are hit
 - [ ] `docs/memory/activeContext.md` rewrite at end of each session
@@ -72,7 +72,7 @@ Status: On track
 - `Memory Bank setup` — **Done** — All orientation docs created, audited (3 passes), and cross-referenced; AI can onboard to this repo without verbal re-orientation.
 - `PRD v0.1` — **Done** — Reverse-engineered PRD of Excalidraw created; In Review status; scope clarification (Q-4) still needed.
 - `Doc audit pass` — **Done** (session 6) — All reference docs verified against source; 12 files corrected.
-- `Workshop PR complete` — **In progress** — All deliverables done; PR not yet opened.
+- `Workshop PR complete` — **Done** — PR opened (2026-03-26); review follow-up fixes applied (commit `90d52b7`).
 - `First implementation task` — **Not started** — Scope TBD; no code changed yet.
 - `Test coverage baseline` — **Not started** — Run `yarn test:all` to confirm current pass/fail state before any changes.
 - `Feature implementation` — **Not started** — Depends on: first task defined, test baseline confirmed.

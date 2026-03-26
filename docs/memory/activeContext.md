@@ -1,9 +1,9 @@
-> Last updated: 2026-03-26 (session 6)
+> Last updated: 2026-03-26 (session 7)
 > Related: [progress.md](progress.md) | [decisionLog.md](decisionLog.md) | [PRD](../product/PRD.md) | [architecture](../technical/architecture.md) | [undocumented-behavior](../technical/undocumented-behavior.md)
 
 ## Current focus
 
-Doc audit pass complete — all reference docs corrected against source. Ready to open Workshop PR.
+Workshop PR open; review follow-up fixes applied. Awaiting further review or implementation direction.
 
 ## What was just done
 
@@ -31,8 +31,8 @@ Full audit and correction of all docs/memory/ and reference docs. Every finding 
 
 ## In progress (not finished)
 
-- **Workshop PR** — deliverables complete; PR not yet opened.
-- **Implementation work** — 0% — no feature tasks started; awaiting user direction.
+- **Workshop PR** — open; review follow-up fixes applied (commit `90d52b7`); awaiting review outcome.
+- **Implementation work** — not yet started; awaiting direction after PR review.
 
 ## Known issues & open questions
 
@@ -52,8 +52,8 @@ Full audit and correction of all docs/memory/ and reference docs. Every finding 
 
 1. ✓ `.cursorignore` created (copied from `.claudeignore`) — committed `ad88a75`.
 2. ✓ Doc audit pass complete — all reference docs corrected against source.
-3. Open the Workshop PR with the PR template filled.
-4. Identify the first implementation task — needs user direction; no code has been changed yet.
+3. ✓ Workshop PR opened; review follow-up fixes applied (commit `90d52b7`).
+4. Identify the first implementation task — needs user direction after PR review; no feature code changed yet.
 5. Run `yarn test:all` to establish a clean baseline before any code changes.
 
 ## Context that expires

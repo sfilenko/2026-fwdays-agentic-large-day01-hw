@@ -22,7 +22,7 @@ Session 8 — doc lint fixes (MD041, ephemeral fact cleanup). All findings verif
 - `docs/memory/decisionLog.md` holds only 6 undocumented-behavior entries (active findings); pre-2026 architectural decisions are in `docs/technical/decisionLog-archive.md`.
 - `docs/technical/` and `docs/product/` files are reference docs — longer is fine, depth over brevity.
 - All docs are facts-only, source-verified — no assumptions or inferred behavior without a cited file/line.
-- Memory Bank files cross-reference each other via relative markdown links, not plain text.
+- Memory Bank files cross-reference each other via relative Markdown links, not plain text.
 
 ## In progress (not finished)
 
@@ -54,4 +54,4 @@ Session 8 — doc lint fixes (MD041, ephemeral fact cleanup). All findings verif
 ## Context that expires
 
 - `yarn.lock` has an unstaged modification (last observed: 2026-03-26) — check before running `yarn install` or adding dependencies; root cause not yet investigated.
-- No feature flags or temporary workarounds are currently active in the codebase (from this session's perspective).
+- Feature flag system exists at `packages/common/src/utils.ts:1282` (`FEATURE_FLAGS` type, `getFeatureFlag`/`setFeatureFlag`); one defined flag: `COMPLEX_BINDINGS: false` (disabled by default). No `tempWorkaround`, `WORKAROUND`, or `isWorkaroundActive` identifiers found in `.ts`/`.tsx` files (searched 2026-03-26).

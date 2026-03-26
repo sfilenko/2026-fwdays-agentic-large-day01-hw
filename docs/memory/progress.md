@@ -39,7 +39,7 @@ Status: On track
 
 ## In progress
 
-*(nothing actively in progress)*
+- No tasks actively in progress — 2026-03-26. Next action awaits user direction on first implementation task.
 
 ---
 
@@ -53,7 +53,7 @@ Status: On track
 
 ## Blocked
 
-*(nothing blocked)*
+- No tasks blocked — 2026-03-26. Pending items in `## Not started` depend on user direction, not on a technical blocker.
 
 ---
 

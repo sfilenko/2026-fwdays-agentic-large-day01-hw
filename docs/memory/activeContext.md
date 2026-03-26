@@ -1,3 +1,5 @@
+# Active Context
+
 > Last updated: 2026-03-26 (session 7)
 > Related: [progress.md](progress.md) | [decisionLog.md](decisionLog.md) | [PRD](../product/PRD.md) | [architecture](../technical/architecture.md) | [undocumented-behavior](../technical/undocumented-behavior.md)
 

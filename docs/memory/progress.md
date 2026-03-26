@@ -59,7 +59,7 @@ Status: On track
 
 ## Discovered work
 
-- [!] `yarn.lock` has an unstaged modification (`M yarn.lock` in git status, multiple sessions) — severity: **low** — investigate before adding dependencies; root cause not yet confirmed.
+- [!] `yarn.lock` has an unstaged modification (last observed: 2026-03-26) — severity: **low** — investigate before adding dependencies; root cause not yet confirmed.
 - [!] `frame.test.tsx` — frame element detection passes in browser, fails in jsdom, root cause unknown — severity: **medium** — do not attempt to fix without a reproducible root cause; avoid working around it silently.
 - [!] `textWysiwyg.test.tsx:335` — arrow label version-bump test is non-deterministically flaky, acknowledged in code with no known cause — severity: **low** — do not mark as fixed without a reproducible root cause.
 - [!] `isSomeElementSelected` in `packages/element/src/selection.ts` uses module-level memoization shared across all `Scene` instances — severity: **medium** — breaks multi-editor setups; marked as FIXME but no fix is in progress.

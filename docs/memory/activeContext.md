@@ -60,5 +60,5 @@ Full audit and correction of all docs/memory/ and reference docs. Every finding 
 
 ## Context that expires
 
-- `yarn.lock` shows `M yarn.lock` in git status (observed across multiple sessions) — check before running `yarn install` or adding dependencies; root cause not yet investigated.
+- `yarn.lock` has an unstaged modification (last observed: 2026-03-26, across multiple sessions) — check before running `yarn install` or adding dependencies; root cause not yet investigated.
 - No feature flags or temporary workarounds are currently active in the codebase (from this session's perspective).
